@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DashBoardVC.h
 //  LoginModule
 //
 //  Created by Magnon International on 25/07/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DashBoardVC : UIViewController{
+    
+}
 
 @end

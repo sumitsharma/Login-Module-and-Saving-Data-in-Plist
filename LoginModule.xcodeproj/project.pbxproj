@@ -16,9 +16,19 @@
 		686CCD8217A10D3700AF8081 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD8117A10D3700AF8081 /* Default.png */; };
 		686CCD8417A10D3700AF8081 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD8317A10D3700AF8081 /* Default@2x.png */; };
 		686CCD8617A10D3700AF8081 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD8517A10D3700AF8081 /* Default-568h@2x.png */; };
-		686CCD8917A10D3700AF8081 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686CCD8817A10D3700AF8081 /* ViewController.m */; };
-		686CCD8C17A10D3700AF8081 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD8A17A10D3700AF8081 /* ViewController_iPhone.xib */; };
-		686CCD8F17A10D3700AF8081 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD8D17A10D3700AF8081 /* ViewController_iPad.xib */; };
+		686CCD9817A10D5500AF8081 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 686CCD9617A10D5500AF8081 /* LoginVC.m */; };
+		686CCD9C17A10E0500AF8081 /* LoginVC_iphone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD9B17A10E0500AF8081 /* LoginVC_iphone5.xib */; };
+		686CCD9E17A10E1500AF8081 /* LoginVC_iphone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD9D17A10E1500AF8081 /* LoginVC_iphone4.xib */; };
+		686CCDA017A10E2800AF8081 /* LoginVC_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCD9F17A10E2800AF8081 /* LoginVC_iPad.xib */; };
+		686CCDA417A1109A00AF8081 /* DashBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 686CCDA217A1109A00AF8081 /* DashBoardVC.m */; };
+		686CCDA717A110D500AF8081 /* DashBoardVC_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDA617A110D500AF8081 /* DashBoardVC_iPad.xib */; };
+		686CCDA917A110F600AF8081 /* DashBoardVC_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDA817A110F600AF8081 /* DashBoardVC_iPhone4.xib */; };
+		686CCDAB17A1110A00AF8081 /* DashBoardVC_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDAA17A1110A00AF8081 /* DashBoardVC_iPhone5.xib */; };
+		686CCDAF17A117C300AF8081 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 686CCDAD17A117C300AF8081 /* RegisterVC.m */; };
+		686CCDB417A117EF00AF8081 /* RegisterVC_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDB317A117EE00AF8081 /* RegisterVC_iPhone4.xib */; };
+		686CCDB617A1180200AF8081 /* RegisterVC_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDB517A1180200AF8081 /* RegisterVC_iPhone5.xib */; };
+		686CCDB817A1181600AF8081 /* RegisterVC_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDB717A1181600AF8081 /* RegisterVC_iPad.xib */; };
+		686CCDBA17A1212400AF8081 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 686CCDB917A1212400AF8081 /* Data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +45,22 @@
 		686CCD8117A10D3700AF8081 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		686CCD8317A10D3700AF8081 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		686CCD8517A10D3700AF8081 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		686CCD8717A10D3700AF8081 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		686CCD8817A10D3700AF8081 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		686CCD8B17A10D3700AF8081 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		686CCD8E17A10D3700AF8081 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		686CCD9517A10D5500AF8081 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		686CCD9617A10D5500AF8081 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		686CCD9B17A10E0500AF8081 /* LoginVC_iphone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC_iphone5.xib; sourceTree = "<group>"; };
+		686CCD9D17A10E1500AF8081 /* LoginVC_iphone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC_iphone4.xib; sourceTree = "<group>"; };
+		686CCD9F17A10E2800AF8081 /* LoginVC_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC_iPad.xib; sourceTree = "<group>"; };
+		686CCDA117A1109A00AF8081 /* DashBoardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashBoardVC.h; sourceTree = "<group>"; };
+		686CCDA217A1109A00AF8081 /* DashBoardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashBoardVC.m; sourceTree = "<group>"; };
+		686CCDA617A110D500AF8081 /* DashBoardVC_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashBoardVC_iPad.xib; sourceTree = "<group>"; };
+		686CCDA817A110F600AF8081 /* DashBoardVC_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashBoardVC_iPhone4.xib; sourceTree = "<group>"; };
+		686CCDAA17A1110A00AF8081 /* DashBoardVC_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashBoardVC_iPhone5.xib; sourceTree = "<group>"; };
+		686CCDAC17A117C200AF8081 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		686CCDAD17A117C300AF8081 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		686CCDB317A117EE00AF8081 /* RegisterVC_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC_iPhone4.xib; sourceTree = "<group>"; };
+		686CCDB517A1180200AF8081 /* RegisterVC_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC_iPhone5.xib; sourceTree = "<group>"; };
+		686CCDB717A1181600AF8081 /* RegisterVC_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC_iPad.xib; sourceTree = "<group>"; };
+		686CCDB917A1212400AF8081 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +107,15 @@
 		686CCD7517A10D3700AF8081 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				686CCD9A17A10D6B00AF8081 /* Resources */,
 				686CCD7E17A10D3700AF8081 /* AppDelegate.h */,
 				686CCD7F17A10D3700AF8081 /* AppDelegate.m */,
-				686CCD8717A10D3700AF8081 /* ViewController.h */,
-				686CCD8817A10D3700AF8081 /* ViewController.m */,
-				686CCD8A17A10D3700AF8081 /* ViewController_iPhone.xib */,
-				686CCD8D17A10D3700AF8081 /* ViewController_iPad.xib */,
+				686CCD9517A10D5500AF8081 /* LoginVC.h */,
+				686CCD9617A10D5500AF8081 /* LoginVC.m */,
+				686CCDA117A1109A00AF8081 /* DashBoardVC.h */,
+				686CCDA217A1109A00AF8081 /* DashBoardVC.m */,
+				686CCDAC17A117C200AF8081 /* RegisterVC.h */,
+				686CCDAD17A117C300AF8081 /* RegisterVC.m */,
 				686CCD7617A10D3700AF8081 /* Supporting Files */,
 			);
 			path = LoginModule;
@@ -106,8 +131,25 @@
 				686CCD8117A10D3700AF8081 /* Default.png */,
 				686CCD8317A10D3700AF8081 /* Default@2x.png */,
 				686CCD8517A10D3700AF8081 /* Default-568h@2x.png */,
+				686CCDB917A1212400AF8081 /* Data.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		686CCD9A17A10D6B00AF8081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				686CCD9B17A10E0500AF8081 /* LoginVC_iphone5.xib */,
+				686CCD9D17A10E1500AF8081 /* LoginVC_iphone4.xib */,
+				686CCD9F17A10E2800AF8081 /* LoginVC_iPad.xib */,
+				686CCDA617A110D500AF8081 /* DashBoardVC_iPad.xib */,
+				686CCDA817A110F600AF8081 /* DashBoardVC_iPhone4.xib */,
+				686CCDAA17A1110A00AF8081 /* DashBoardVC_iPhone5.xib */,
+				686CCDB317A117EE00AF8081 /* RegisterVC_iPhone4.xib */,
+				686CCDB517A1180200AF8081 /* RegisterVC_iPhone5.xib */,
+				686CCDB717A1181600AF8081 /* RegisterVC_iPad.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +207,16 @@
 				686CCD8217A10D3700AF8081 /* Default.png in Resources */,
 				686CCD8417A10D3700AF8081 /* Default@2x.png in Resources */,
 				686CCD8617A10D3700AF8081 /* Default-568h@2x.png in Resources */,
-				686CCD8C17A10D3700AF8081 /* ViewController_iPhone.xib in Resources */,
-				686CCD8F17A10D3700AF8081 /* ViewController_iPad.xib in Resources */,
+				686CCD9C17A10E0500AF8081 /* LoginVC_iphone5.xib in Resources */,
+				686CCD9E17A10E1500AF8081 /* LoginVC_iphone4.xib in Resources */,
+				686CCDA017A10E2800AF8081 /* LoginVC_iPad.xib in Resources */,
+				686CCDA717A110D500AF8081 /* DashBoardVC_iPad.xib in Resources */,
+				686CCDA917A110F600AF8081 /* DashBoardVC_iPhone4.xib in Resources */,
+				686CCDAB17A1110A00AF8081 /* DashBoardVC_iPhone5.xib in Resources */,
+				686CCDB417A117EF00AF8081 /* RegisterVC_iPhone4.xib in Resources */,
+				686CCDB617A1180200AF8081 /* RegisterVC_iPhone5.xib in Resources */,
+				686CCDB817A1181600AF8081 /* RegisterVC_iPad.xib in Resources */,
+				686CCDBA17A1212400AF8081 /* Data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +229,9 @@
 			files = (
 				686CCD7C17A10D3700AF8081 /* main.m in Sources */,
 				686CCD8017A10D3700AF8081 /* AppDelegate.m in Sources */,
-				686CCD8917A10D3700AF8081 /* ViewController.m in Sources */,
+				686CCD9817A10D5500AF8081 /* LoginVC.m in Sources */,
+				686CCDA417A1109A00AF8081 /* DashBoardVC.m in Sources */,
+				686CCDAF17A117C300AF8081 /* RegisterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,22 +244,6 @@
 				686CCD7917A10D3700AF8081 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		686CCD8A17A10D3700AF8081 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				686CCD8B17A10D3700AF8081 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		686CCD8D17A10D3700AF8081 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				686CCD8E17A10D3700AF8081 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

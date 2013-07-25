@@ -8,30 +8,69 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "LoginVC.h"
 
 @implementation AppDelegate
+
+
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_loginVC release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+ 
+    
+   
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
+        self.loginVC=[[[LoginVC alloc] initWithNibName:@"LoginVC_iphone4" bundle:nil] autorelease];
     } else {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
+        self.loginVC=[[[LoginVC alloc] initWithNibName:@"LoginVC_iPad" bundle:nil] autorelease];
     }
-    self.window.rootViewController = self.viewController;
+     self.window.rootViewController=self.loginVC;
+
+    UINavigationController *navigationController = [[UINavigationController alloc]   initWithRootViewController:self.loginVC];
+    self.window.rootViewController= navigationController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+//-(void)addCustomViews:(NSInteger) num{
+//
+//    switch (num) {
+//        case 1:{
+//            if (self.loginVC) {
+//                //[self.window.rootViewController removeFromParentViewController];
+//                
+//                [self.loginVC removeFromParentViewController];
+//            }
+//            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+//                self.registerVC=[[[RegisterVC alloc] initWithNibName:@"RegisterVC_iPhone4" bundle:nil] autorelease];
+//            } else {
+//                self.registerVC=[[[RegisterVC alloc] initWithNibName:@"LoginVC_iPad" bundle:nil] autorelease];
+//            }
+//            self.window.rootViewController=self.registerVC;
+//            [self.window makeKeyAndVisible];
+//        }
+//            
+//            
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
