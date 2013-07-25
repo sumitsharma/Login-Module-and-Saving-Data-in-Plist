@@ -9,15 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class LoginVC;
-@class RegisterVC;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property(strong, nonatomic)LoginVC *loginVC;
-@property(strong, nonatomic)RegisterVC *registerVC;
 
 
--(void)addCustomViews:(NSInteger) num;
 @end

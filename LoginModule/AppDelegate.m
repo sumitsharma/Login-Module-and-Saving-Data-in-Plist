@@ -17,7 +17,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_loginVC release];
+    [_loginVC release];    
     [super dealloc];
 }
 
@@ -43,35 +43,6 @@
     
     return YES;
 }
-
-//-(void)addCustomViews:(NSInteger) num{
-//
-//    switch (num) {
-//        case 1:{
-//            if (self.loginVC) {
-//                //[self.window.rootViewController removeFromParentViewController];
-//                
-//                [self.loginVC removeFromParentViewController];
-//            }
-//            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-//                self.registerVC=[[[RegisterVC alloc] initWithNibName:@"RegisterVC_iPhone4" bundle:nil] autorelease];
-//            } else {
-//                self.registerVC=[[[RegisterVC alloc] initWithNibName:@"LoginVC_iPad" bundle:nil] autorelease];
-//            }
-//            self.window.rootViewController=self.registerVC;
-//            [self.window makeKeyAndVisible];
-//        }
-//            
-//            
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    
-//}
-
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
