@@ -2,9 +2,11 @@
 //  DashBoardVC.h
 //  LoginModule
 //
-//  Created by Magnon International on 25/07/13.
-//  Copyright (c) 2013 Magnon International. All rights reserved.
-//
+/**
+ *   Created By Sumit Sharma on 26/07/13
+ *   iPhone Application Developer, India
+ *
+ **/
 
 #import <UIKit/UIKit.h>
 

@@ -2,9 +2,11 @@
 //  DashBoardVC.m
 //  LoginModule
 //
-//  Created by Magnon International on 25/07/13.
-//  Copyright (c) 2013 Magnon International. All rights reserved.
-//
+/**
+ *   Created By Sumit Sharma on 26/07/13
+ *   iPhone Application Developer, India
+ *
+ **/
 
 #import "DashBoardVC.h"
 
@@ -34,6 +36,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title=@"DashBaord";
     
    
 }

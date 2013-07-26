@@ -7,7 +7,7 @@
 	<key>LastName</key>
 	<string></string>
 	<key>Age</key>
-	<integer>0</integer>
+	<string></string>
 	<key>EmailID</key>
 	<string></string>
 	<key>Password</key>

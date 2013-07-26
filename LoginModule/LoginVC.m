@@ -2,9 +2,11 @@
 //  LoginVC.m
 //  LoginModule
 //
-//  Created by Magnon International on 25/07/13.
-//  Copyright (c) 2013 Magnon International. All rights reserved.
-//
+/**
+ *   Created By Sumit Sharma on 26/07/13
+ *   iPhone Application Developer, India
+ *
+ **/
 
 #import "LoginVC.h"
 #import "DashBoardVC.h"
@@ -16,6 +18,7 @@
 @end
 
 @implementation LoginVC
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,8 +45,7 @@
 }
 
 -(IBAction)tapDetected:(id)sender{
-    RegisterVC *rvc =[[RegisterVC alloc] init];
-    [self.navigationController pushViewController:rvc animated:YES];
+    [[AppDelegate GetAppDelegate] addRegisterView];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -59,9 +61,67 @@
     [self showAlert:@"Both Fields are Compulsory"];
     }
     else{
-        DashBoardVC *dvc=[[DashBoardVC alloc] init];
-        [self.navigationController pushViewController:dvc animated:YES];        
+        if ([self checkPListData:txtEmailID.text :txtPassword.text]) {
+            [[AppDelegate GetAppDelegate] addDashBoardView];
+        }
+        else{
+            [self showAlert:@"Wrong EmailID or Pasword"];
+        }
+        
+        
     }
+}
+-(IBAction)btnRememberMeIsClicked:(id)sender{
+    
+    if (rememberMeIsChecked) {
+        rememberMeIsChecked=FALSE;
+        [btnRememberMe setBackgroundImage:[UIImage imageNamed:@"checkbox.png"] forState:UIControlStateNormal];
+    }
+    else{
+        rememberMeIsChecked=TRUE;
+        [btnRememberMe setBackgroundImage:[UIImage imageNamed:@"chk_checked.png"] forState:UIControlStateNormal];
+    }
+    
+}
+-(IBAction)btnRegisterMeIsClicked:(id)sender{
+    [[AppDelegate GetAppDelegate] addRegisterView];
+}
+-(IBAction)btnForgotPasswordIsClicked:(id)sender{
+    [[AppDelegate GetAppDelegate] addForgotPasswordView];
+}
+-(BOOL)checkPListData:(NSString *)userName :(NSString*)password{
+    // get paths from root direcory
+	NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
+	// get documents path
+	NSString *documentsPath = [paths objectAtIndex:0];
+	// get the path to our Data/plist file
+	NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"Data.plist"];
+	
+	// check to see if Data.plist exists in documents
+	if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+	{
+		// if not in documents, get property list from main bundle
+		plistPath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
+	}
+	
+	// read property list into memory as an NSData object
+	NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+	NSString *errorDesc = nil;
+	NSPropertyListFormat format;
+	// convert static property liost into dictionary object
+	NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:&errorDesc];
+	if (!temp)
+	{
+		NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+	}
+    
+    if ([userName isEqualToString:[temp objectForKey:@"EmailID"]] && [password isEqualToString:[temp objectForKey:@"Password"]]) {
+        return TRUE;
+    }
+    else{
+        return FALSE;
+    }    
+	
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{

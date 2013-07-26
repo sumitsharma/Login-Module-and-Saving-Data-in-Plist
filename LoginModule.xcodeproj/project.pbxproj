@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680E4A7917A240E600FE0658 /* ForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 680E4A7717A240E600FE0658 /* ForgotPasswordVC.m */; };
+		680E4A7C17A2411B00FE0658 /* ForgotPasswordVC_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680E4A7B17A2411B00FE0658 /* ForgotPasswordVC_iPad.xib */; };
+		680E4A7E17A2413400FE0658 /* ForgotPassword_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680E4A7D17A2413400FE0658 /* ForgotPassword_iPhone4.xib */; };
+		680E4A8017A2414A00FE0658 /* ForgotPassword_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680E4A7F17A2414A00FE0658 /* ForgotPassword_iPhone5.xib */; };
+		680E4A8417A246AF00FE0658 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E4A8217A246AF00FE0658 /* checkbox.png */; };
+		680E4A8517A246AF00FE0658 /* chk_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E4A8317A246AF00FE0658 /* chk_checked.png */; };
 		686CCD7017A10D3700AF8081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686CCD6F17A10D3700AF8081 /* UIKit.framework */; };
 		686CCD7217A10D3700AF8081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686CCD7117A10D3700AF8081 /* Foundation.framework */; };
 		686CCD7417A10D3700AF8081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686CCD7317A10D3700AF8081 /* CoreGraphics.framework */; };
@@ -32,6 +38,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		680E4A7517A23BDF00FE0658 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		680E4A7617A240E600FE0658 /* ForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordVC.h; sourceTree = "<group>"; };
+		680E4A7717A240E600FE0658 /* ForgotPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordVC.m; sourceTree = "<group>"; };
+		680E4A7B17A2411B00FE0658 /* ForgotPasswordVC_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordVC_iPad.xib; sourceTree = "<group>"; };
+		680E4A7D17A2413400FE0658 /* ForgotPassword_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPassword_iPhone4.xib; sourceTree = "<group>"; };
+		680E4A7F17A2414A00FE0658 /* ForgotPassword_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPassword_iPhone5.xib; sourceTree = "<group>"; };
+		680E4A8217A246AF00FE0658 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
+		680E4A8317A246AF00FE0658 /* chk_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chk_checked.png; sourceTree = "<group>"; };
 		686CCD6C17A10D3700AF8081 /* LoginModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686CCD6F17A10D3700AF8081 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		686CCD7117A10D3700AF8081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680E4A7417A23BB300FE0658 /* UtilsAndDefines */ = {
+			isa = PBXGroup;
+			children = (
+				680E4A7517A23BDF00FE0658 /* Defines.h */,
+			);
+			path = UtilsAndDefines;
+			sourceTree = "<group>";
+		};
+		680E4A8117A246AF00FE0658 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				680E4A8217A246AF00FE0658 /* checkbox.png */,
+				680E4A8317A246AF00FE0658 /* chk_checked.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		686CCD6317A10D3700AF8081 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +138,8 @@
 		686CCD7517A10D3700AF8081 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				680E4A8117A246AF00FE0658 /* Images */,
+				680E4A7417A23BB300FE0658 /* UtilsAndDefines */,
 				686CCD9A17A10D6B00AF8081 /* Resources */,
 				686CCD7E17A10D3700AF8081 /* AppDelegate.h */,
 				686CCD7F17A10D3700AF8081 /* AppDelegate.m */,
@@ -116,6 +149,8 @@
 				686CCDA217A1109A00AF8081 /* DashBoardVC.m */,
 				686CCDAC17A117C200AF8081 /* RegisterVC.h */,
 				686CCDAD17A117C300AF8081 /* RegisterVC.m */,
+				680E4A7617A240E600FE0658 /* ForgotPasswordVC.h */,
+				680E4A7717A240E600FE0658 /* ForgotPasswordVC.m */,
 				686CCD7617A10D3700AF8081 /* Supporting Files */,
 			);
 			path = LoginModule;
@@ -148,6 +183,9 @@
 				686CCDB317A117EE00AF8081 /* RegisterVC_iPhone4.xib */,
 				686CCDB517A1180200AF8081 /* RegisterVC_iPhone5.xib */,
 				686CCDB717A1181600AF8081 /* RegisterVC_iPad.xib */,
+				680E4A7B17A2411B00FE0658 /* ForgotPasswordVC_iPad.xib */,
+				680E4A7D17A2413400FE0658 /* ForgotPassword_iPhone4.xib */,
+				680E4A7F17A2414A00FE0658 /* ForgotPassword_iPhone5.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -217,6 +255,11 @@
 				686CCDB617A1180200AF8081 /* RegisterVC_iPhone5.xib in Resources */,
 				686CCDB817A1181600AF8081 /* RegisterVC_iPad.xib in Resources */,
 				686CCDBA17A1212400AF8081 /* Data.plist in Resources */,
+				680E4A7C17A2411B00FE0658 /* ForgotPasswordVC_iPad.xib in Resources */,
+				680E4A7E17A2413400FE0658 /* ForgotPassword_iPhone4.xib in Resources */,
+				680E4A8017A2414A00FE0658 /* ForgotPassword_iPhone5.xib in Resources */,
+				680E4A8417A246AF00FE0658 /* checkbox.png in Resources */,
+				680E4A8517A246AF00FE0658 /* chk_checked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +275,7 @@
 				686CCD9817A10D5500AF8081 /* LoginVC.m in Sources */,
 				686CCDA417A1109A00AF8081 /* DashBoardVC.m in Sources */,
 				686CCDAF17A117C300AF8081 /* RegisterVC.m in Sources */,
+				680E4A7917A240E600FE0658 /* ForgotPasswordVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +390,7 @@
 				686CCD9417A10D3700AF8081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

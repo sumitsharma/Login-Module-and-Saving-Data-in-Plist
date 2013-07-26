@@ -2,13 +2,18 @@
 //  AppDelegate.m
 //  LoginModule
 //
-//  Created by Magnon International on 25/07/13.
-//  Copyright (c) 2013 Magnon International. All rights reserved.
-//
+/**
+ *   Created By Sumit Sharma on 26/07/13
+ *   iPhone Application Developer, India
+ *
+**/
 
 #import "AppDelegate.h"
 
 #import "LoginVC.h"
+#import "RegisterVC.h"
+#import "ForgotPasswordVC.h"
+#import "DashBoardVC.h"
 
 @implementation AppDelegate
 
@@ -16,8 +21,10 @@
 
 - (void)dealloc
 {
+    ReleaseObj(objLoginView);
+    ReleaseObj(objRegisterView);
+    
     [_window release];
-    [_loginVC release];    
     [super dealloc];
 }
 
@@ -26,22 +33,50 @@
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
- 
-    
-   
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.loginVC=[[[LoginVC alloc] initWithNibName:@"LoginVC_iphone4" bundle:nil] autorelease];
-    } else {
-        self.loginVC=[[[LoginVC alloc] initWithNibName:@"LoginVC_iPad" bundle:nil] autorelease];
-    }
-     self.window.rootViewController=self.loginVC;
-
-    UINavigationController *navigationController = [[UINavigationController alloc]   initWithRootViewController:self.loginVC];
-    self.window.rootViewController= navigationController;
     [self.window makeKeyAndVisible];
     
+     
+    [self addLoginView];
+   
     return YES;
+}
+
++(AppDelegate*)GetAppDelegate{
+    
+    return (AppDelegate*)([UIApplication sharedApplication].delegate);
+}
+#pragma mark - Add Login and Register View
+-(void)addRegisterView{
+    self.window.rootViewController=nil;
+    [self releaseViews];
+    objRegisterView =[[RegisterVC alloc] initWithNibName:@"RegisterVC" bundle:nil];
+    self.window.rootViewController=objRegisterView;
+    
+}
+-(void)addLoginView{    
+    self.window.rootViewController=nil;
+    [self releaseViews];
+    objLoginView=[[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
+    self.window.rootViewController=objLoginView;
+    
+}
+-(void)addForgotPasswordView{
+    self.window.rootViewController=nil;
+    [self releaseViews];
+    objForgotPasswordView=[[ForgotPasswordVC alloc] initWithNibName:@"ForgotPasswordVC" bundle:nil];
+    self.window.rootViewController=objForgotPasswordView;
+}
+-(void)addDashBoardView{ 
+    self.window.rootViewController=nil;
+    [self releaseViews];
+    objDashBoardView=[[[DashBoardVC alloc] initWithNibName:@"DashBoardVC" bundle:nil] autorelease];    
+    navigationController=[[UINavigationController alloc] initWithRootViewController:objDashBoardView];
+    self.window.rootViewController=navigationController;
+}
+-(void) releaseViews{
+    ReleaseObj(objLoginView);
+    ReleaseObj(objRegisterView);
+    ReleaseObj(objForgotPasswordView);
 }
 - (void)applicationWillResignActive:(UIApplication *)application
 {

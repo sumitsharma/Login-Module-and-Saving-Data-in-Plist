@@ -2,9 +2,11 @@
 //  LoginVC.h
 //  LoginModule
 //
-//  Created by Magnon International on 25/07/13.
-//  Copyright (c) 2013 Magnon International. All rights reserved.
-//
+/**
+ *   Created By Sumit Sharma on 26/07/13
+ *   iPhone Application Developer, India
+ *
+ **/
 
 #import <UIKit/UIKit.h>
 
@@ -13,11 +15,16 @@
     IBOutlet UITextField *txtPassword;
     
     IBOutlet UIButton *btnLogin;
+    IBOutlet UIButton *btnRememberMe;
+    IBOutlet UIButton *btnRegisterMe;
+    IBOutlet UIButton *btnForgotPassword;
     
-   IBOutlet UILabel *lblRegisterMe;
+    BOOL rememberMeIsChecked;
 }
 
 
 -(IBAction)btnLoginIsClicked:(id)sender;
--(IBAction)tapDetected:(id)sender;
+-(IBAction)btnRememberMeIsClicked:(id)sender;// This is CheckBox
+-(IBAction)btnForgotPasswordIsClicked:(id)sender;
+-(IBAction)btnRegisterMeIsClicked:(id)sender;// This is Button Register
 @end
